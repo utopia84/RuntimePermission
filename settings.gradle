@@ -1,0 +1,4 @@
+include ':RuntimePermissions'//include ':RuntimePermissions-processor'
+//include ':RuntimePermissions-annotation'
+include ':app'
+rootProject.name = "PermissionsApplication"
