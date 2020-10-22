@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sample_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openCamera"
+        android:text="摄像头授权测试" />
+
+    <Button
+        android:id="@+id/btn_open_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openContacts"
+        android:text="通讯录授权测试" />
+
+
+    <fragment
+        android:id="@+id/fl_container"
+        android:name="com.runtime.permissions.NeedPermissionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_need_permission" />
+
+</LinearLayout>
+
